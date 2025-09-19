@@ -1,4 +1,3 @@
-Program:
 #include<iostream>
 using namespace std;
 char stack[100];
@@ -65,6 +64,7 @@ while(!isEmpty())
 	cout<<"Prefix Expression:"<<post<<endl;
 	return 0;
 }
+
 
 
 
