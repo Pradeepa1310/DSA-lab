@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 using namespace std;
 // Node structure struct Node 
 {
@@ -21,18 +21,18 @@ root->right = insert(root->right, value);
 }
 return root;
 }
-// Inorder Traversal (L ¨ Root ¨ R)
+// Inorder Traversal (L ÂÂ¨ Root ÂÂ¨ R)
 void inorder(Node* root) { if (root != NULL) {
 inorder(root->left);
 cout << root->data << " "; inorder(root->right);
 }
 }
-// Preorder Traversal (Root ¨ L ¨ R)
+// Preorder Traversal (Root ÂÂ¨ L ÂÂ¨ R)
 void preorder(Node* root) { if (root != NULL) {
 cout << root->data << " "; preorder(root->left); preorder(root->right);
 }
 }
-// Postorder Traversal (L ¨ R ¨ Root)
+// Postorder Traversal (L ÂÂ¨ R ÂÂ¨ Root)
 void postorder(Node* root) { if (root != NULL) {
 postorder(root->left); postorder(root->right); cout << root->data << " ";
 }
@@ -50,3 +50,4 @@ cout << "\nPostorder Traversal: "; postorder(root);
 cout << endl;
 return 0;
 }
+
